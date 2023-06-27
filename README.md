@@ -17,13 +17,16 @@ Overall, this project demonstrates your skills in working with APIs, JavaScript,
 
 ## Screenshots
 #### Home Page
-![Screenshot 2023-06-](https://github.com/vijayram13/MealApp/assets/131104698/751af604-1485-4e7a-805a-391b078833a3)
+![home](https://github.com/vijayram13/MealApp/assets/131104698/d0a9d44b-8ca7-4254-be7b-abc3d42e45c9)
 
 #### Favourite Page
-![Screenshot 2023-06-19 225859](https://github.com/vijayram13/MealApp/assets/131104698/de38552c-b5ac-4dbe-a83d-d3225eb27f89)
+![favourite](https://github.com/vijayram13/MealApp/assets/131104698/af71efc7-cc22-41bc-a2f9-d2c6f4a0ecf7)
+
 
 #### MoreDetails Page
-![moredetails](https://github.com/vijayram13/MealApp/assets/131104698/7a0f4e18-bbb7-468a-9844-aa87f59dbb20)
+
+![moredetails](https://github.com/vijayram13/MealApp/assets/131104698/02f78ed9-93bd-4251-94e1-3680f76958b3)
+
 
 
 ### Prerequisites
