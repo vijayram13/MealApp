@@ -49,7 +49,7 @@ Overall, this project demonstrates your skills in working with APIs, JavaScript,
 
 ## Hosting site
 
-Check out the live demo of the application at []
+- [mealApp](https://vijayram13.github.io/MealApp/)
 
 ## Authors
 
