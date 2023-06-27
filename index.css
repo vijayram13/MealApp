@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-blend-mode: screen;
+    background: url("https://img.freepik.com/premium-vector/chicken-dish-top-view-with-wooden-pattern-background-chicken-meat-collection-chicken-food-template_761765-41.jpg?w=2000") rgba(107, 130, 140, 0.915);
+}
+
+#errordiv  {
+    font-size: 2vw;
+    display: none;
+    text-align: center;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.header h3 {
+    color: rgb(4, 66, 4);
+    /* font-size: 2vw; */
+}
+
+.header a {
+    text-decoration-line: none;
+    margin-left: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header a h3:hover {
+    color: blue;
+
+}
+
+.afterHeader h1 {
+    font-size: 6vw;
+    background-blend-mode: darken;
+    background: url("https://admin.adelaidecentralplaza.com.au/getattachment/b6307554-9cdc-4de2-9508-7251630e3f59/Food-web-tile.jpg?lang=en-AU&ext=.jpg") red;
+    background-size: contain;
+    background-clip: text;
+    text-shadow: 2px 2px 20px #0a444689;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.afterHeader {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    opacity: 100px;
+    background-blend-mode: screen;
+    background: url("https://img.freepik.com/premium-vector/chicken-dish-top-view-with-wooden-pattern-background-chicken-meat-collection-chicken-food-template_761765-41.jpg?w=2000") rgba(107, 130, 140, 0.915);
+}
+
+.search {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 40px;
+    width: 50%;
+    border: 2px solid rgb(15, 179, 15);
+    border-radius: 10px;
+    overflow: hidden;
+
+
+
+
+
+
+
+}
+
+#searchInput {
+    border: 0px;
+    background: rgb(243, 243, 243);
+    border-right: 0px;
+    outline: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    text-indent: 10px;
+    color: rgba(107, 129, 143, 0.955);
+
+
+}
+
+
+
+.search button {
+    height: 100%;
+    outline: 0px;
+    width: 50px;
+    border: 0.1px solid rgb(243, 243, 243);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(15, 179, 15);
+
+
+
+}
+
+#searchButton:active {
+
+    background-color: rgba(169, 204, 213, 0.804);
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardbox {
+    display: flex;
+    /* background-color: rgb(228, 241, 241); */
+    height: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    border-radius: 20px;
+    background: #e0e2dfe8;
+    box-shadow: 10px 10px 60px #d4e1de,
+        -10px -10px 60px #84938f;
+
+}
+
+
+
+
+.card {
+
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    border: 1px solid rgb(207, 239, 207);
+    transition: 0.5s ease-out;
+    background-color: rgb(178, 233, 178);
+    overflow: visible;
+
+    margin: 20px 10px 20px 10px;
+
+}
+
+
+.card .text-title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2%;
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+    z-index: 1;
+
+
+
+}
+
+
+.card-button {
+    /* transform: translate(-50%, 50%); */
+    width: 60%;
+    border-radius: 1rem;
+    border: 1px solid rgb(195, 242, 195);
+    background-color: rgb(233, 226, 226);
+    color: #070000;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    box-shadow: 5px 5px 5px #1e8369;
+    cursor: pointer;
+    /* transition: 0.3s ease-out; */
+    z-index: 2;
+
+
+}
+
+
+
+
+.card-image {
+    height: 70%;
+    width: 100%;
+    border-radius: 18px;
+
+}
+
+.card-image img {
+
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.descp {
+    display: block;
+    height: 100vh;
+    width: 80%;
+    background-color: #1e836a63;
+
+}
+
+
+
+/* Styles for desktop */
+@media (min-width: 768px)  {
+
+    /* Add your desktop styles here */
+    .card:hover .card-button {
+        transform: translate(-50%, 50%);
+        opacity: 1;
+    }
+
+}
+
+/* Styles for mobile */
+@media (max-width: 767px) {
+    /* Add your mobile styles here */
+    .card-button{
+        transform:translate(-50%, 50%) ;
+        opacity: 1;
+    }
+    .afterHeader h1{
+        font-size: 12vw;
+    }
+    #errordiv{
+        font-size: 3vw;
+    }
+}

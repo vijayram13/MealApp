@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #c9e4e0;
+    background-blend-mode: screen;
+    background: url("https://img.freepik.com/premium-vector/chicken-dish-top-view-with-wooden-pattern-background-chicken-meat-collection-chicken-food-template_761765-41.jpg?w=2000") rgba(107, 130, 140, 0.915);
+}
+
+a{
+    text-decoration: none;
+}
+
+a p{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #036e1c;
+    text-decoration: none;
+}
+
+a:hover p{
+    text-decoration: underline;
+    color: #d91111;
+}
+
+
+.details-box {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* min-width: 500px; */
+    margin: 50px;
+
+}
+
+
+
+.details-box img {
+
+    src: url("https://www.themealdb.com/images/media/meals/sxysrt1468240488.jpg");
+    background-color: #d91111;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow:  -23px -23px 100px #97aba8,
+             23px 23px 100px #fbffff;
+
+}
+
+.details-box .image {
+    display: flex;
+    width: 400px;
+    height: fit-content;
+}
+
+.item-details {
+    height: 100%;
+    width: 600px;
+    margin-left: 20px;
+    overflow: auto;
+
+}
+
+/* instruction title */
+#inst {
+    font-size: large;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(28, 112, 6);
+
+}
+
+.instruction-para {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    text-align: justify;
+}
+
+#item-name{
+    
+    color: rgb(28, 112, 6);
+}
+
+#instruction {
+    text-align: justify
+}
+
+
+
+
+
+/* buttons */
+.button-box {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    margin-top: 5px;
+
+
+
+
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: rgb(0, 0, 0);
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #000b02;
+
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+@media (max-width: 1140px) {
+    .details-box{
+        margin: 10px;
+        justify-content: space-around;
+    }
+    .details-box img{
+        height:100%;
+        width:100%
+        
+    }
+
+
+    .item-details{
+        margin-left: 0;
+        margin:5px;
+        width: 100%;
+    }
+}
